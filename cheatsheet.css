@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +8,16 @@
 
 body {
     padding: 100px;
+    color: white;
+    background-color: #0d1226;
+    font-family: 'Roboto Mono', 'Consolas', 'Lucida Console', monospace;
 }
 
 header h1 {
     margin: 0 auto;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -31,12 +38,20 @@ li {
     list-style-type: none;
 }
 
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: blue;
+}
 
 .concept-container {
-    border: 1px solid red;
     text-align: center;
     width: 100%;
     padding: 60px;
+    border-bottom: 1px solid blue;
 
 }
 
@@ -53,19 +68,39 @@ li {
 .theory-container p {
     margin: 0 auto 30px;
     width: 70%;
+    text-align: justify;
+    font-size: 16px;
+}
 
-    
+.inline-code {
+    background-color: blue;
+}
+
+.concept-code {
+    text-align: left;
+    margin: 0 auto;
 }
 
 .example-container {
     display: inline-block;
     width: 29%;
     height: 50%;
-    border: 1px solid black;
-    vertical-align: middle;
+    vertical-align: top;
 
 }
 
 .example-container img {
     max-width: 300px;
+    padding-top: 57px;
+}
+
+pre code {
+
+    max-width: 35%;
+    background-color: black;
+    border: 1px solid #999;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+
 }

@@ -12,33 +12,104 @@
         <h1>front-end concepts: cheatsheet</h1>
         <h2>table of contents</h2>
         <nav>
-            <h3>html</h3>
-            <ul>
-                <li>creating html file</li>
-                <li>adding basic elements</li>
-                <li>adding css</li>
-            </ul>
-            <h3>css</h3>
-            <ul>
-                <li>styling text</li>
-                <li>leveraging box model</li>
-                <li>advanced css</li>
-            </ul>
+            <div class="nav-category">
+                <h3>html</h3>
+                <ul>
+                    <li><a href="#html-concept-1">creating html file</a></li>
+                    <li><a href="#html-concept-2">adding basic elements</a></li>
+                    <li><a href="#html-concept-3">adding css</a></li>
+                </ul>
+            </div>
+            <div class="nav-category">
+                <h3>css</h3>
+                <ul>
+                    <li>styling text</li>
+                    <li>leveraging box model</li>
+                    <li>advanced css</li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section class="concept-container">
             <div class="theory-container">
-                <h2>creating html file</h2>
+                <h2 id="html-concept-1">creating html file</h2>
+                <p>At the root of every webpage on the internet is an HTML file. At their core, HTML files hold a fundamental structure that must be included when making your own webpages.</p>
+                <p>The first line of an HTML document should always be <span class="inline-code">&lt;!DOCTYPE html&gt;</span>. The doctype declaration is an instruction to the browser about what type of document to expect and which version of HTML is being used. As of now, it’s HTML5.</p>
+                <p>The <span class="inline-code">&lt;html&gt;</span> element, the root of an HTML document, should be added after the !DOCTYPE declaration. All content/structure for an HTML document should be contained between the opening and closing <html> tags.</p>
+                <p>The <span class="inline-code">&lt;head&gt;</span> element contains general information about an HTML page that isn’t displayed on the page itself. This information is called metadata and includes things like the <span class="inline-code">&lt;title&gt;</span> of the HTML document and links to stylesheets.</p>
+                <p>The <span class="inline-code">&lt;body&gt;</span> element represents the content of an HTML document. Content inside those tags is rendered on the web browsers, i.e. is visible.</p>
+                <div class="concept-code">
+                    <pre>
+                        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="example-container">
+                <img src="http://estmary.2020.madeateps.org/wp-content/uploads/sites/32/2016/01/Basic-HTML.png">
+            </div>
+        </section>
+
+        <section class="concept-container">
+            <div class="theory-container">
+                <h2 id="html-concept-2">adding basic elements</h2>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="concept-code">
-                    <code>
-                        function (x, y) {}
-                    </code>
+                    <pre>
+                        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="example-container">
+                <img src="http://estmary.2020.madeateps.org/wp-content/uploads/sites/32/2016/01/Basic-HTML.png">
+            </div>
+        </section>
+        <section class="concept-container">
+            <div class="theory-container">
+                <h2 id="html-concept-3">adding css</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="concept-code">
+                    <pre>
+                        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;title&gt;Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
                 </div>
             </div>
             <div class="example-container">
